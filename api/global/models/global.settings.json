@@ -17,11 +17,6 @@
     "contactEmail": {
       "type": "string"
     },
-    "socialNetworks": {
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.link"
-    },
     "siteLanguage": {
       "type": "string",
       "default": "en",
@@ -37,19 +32,13 @@
       "required": false,
       "pluginOptions": {}
     },
-    "aboutMe": {
-      "type": "richtext"
+    "hero": {
+      "type": "json"
     },
-    "bio": {
-      "type": "text"
-    },
-    "COAs": {
+    "displayProjects": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.cat-button"
-    },
-    "hello": {
-      "type": "string"
+      "component": "global.display-project"
     }
   }
 }
