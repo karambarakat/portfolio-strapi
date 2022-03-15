@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_displayed_projects",
+  "info": {
+    "displayName": "displayedProjects",
+    "icon": "th-large",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    },
+    "etc": {
+      "type": "json"
+    }
+  }
+}
