@@ -87,11 +87,12 @@
       "type": "string"
     },
     "figmaFile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -105,6 +106,27 @@
         }
       },
       "type": "string"
+    },
+    "mediaTemp": {
+      "displayName": "cloudinary",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "temp.cloudinary"
+    },
+    "figmaTemp": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "temp.cloudinary"
     }
   }
 }

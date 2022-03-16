@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_temp_cloudinaries",
+  "info": {
+    "displayName": "cloudinary",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    }
+  }
+}
