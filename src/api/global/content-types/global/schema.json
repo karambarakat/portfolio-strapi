@@ -4,10 +4,15 @@
   "info": {
     "singularName": "global",
     "pluralName": "globals",
-    "displayName": "Global"
+    "displayName": "Global",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": false,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "pluginOptions": {},
   "attributes": {
@@ -15,11 +20,12 @@
       "type": "string"
     },
     "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "siteName": {
       "type": "string"
@@ -28,6 +34,11 @@
       "type": "string",
       "default": "en",
       "minLength": 2
+    },
+    "websites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::website.website"
     }
   }
 }

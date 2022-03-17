@@ -4,10 +4,15 @@
   "info": {
     "singularName": "website",
     "pluralName": "websites",
-    "displayName": "Website"
+    "displayName": "Website",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": false,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "pluginOptions": {},
   "attributes": {
@@ -20,11 +25,12 @@
       "required": true
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
