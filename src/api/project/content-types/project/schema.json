@@ -106,27 +106,6 @@
         }
       },
       "type": "string"
-    },
-    "mediaTemp": {
-      "displayName": "cloudinary",
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "temp.cloudinary"
-    },
-    "figmaTemp": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "temp.cloudinary"
     }
   }
 }
